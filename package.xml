@@ -3,11 +3,16 @@
 <package format="3">
   <name>rrlib_interfaces</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="lukasz@todo.todo">lukasz</maintainer>
-  <license>TODO: License declaration</license>
+  <description>ROS2 interfaces for the rrlib trajectory and kinematics packages.</description>
+  <maintainer email="lukasz.wolinski@pw.edu.pl">Lukasz Wolinski</maintainer>
+  <license>BSD-3-Clause</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>rosidl_default_generators</buildtool_depend>
+  
+  <depend>action_msgs</depend>
+  
+  <member_of_group>rosidl_interface_packages</member_of_group>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>

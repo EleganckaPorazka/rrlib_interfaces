@@ -1,0 +1,13 @@
+# Request
+float64[] start_position # (rad)
+float64[] end_position   # (rad)
+float64 vel_max          # maximum joint velocity (rad/s)
+float64 acc_max          # maximum joint acceleration (rad/s^2)
+float64 dt               # time step (s)
+---
+# Result
+bool success
+string message
+---
+# Feedback
+float64 percent_complete

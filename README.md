@@ -24,3 +24,6 @@ colcon build
 . install/setup.bash
 ```
 
+## Notes
+
+This code is also uploaded to [**my other repository**](https://gitlab.com/lwolinski/rrlib_interfaces.git).

@@ -8,14 +8,16 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "action/PTP.action"
-  "action/LIN.action"
+  "action/CART.action"
+  "msg/CartesianTrajectoryPoint.msg"
   "msg/JacobianStamped.msg"
   "msg/Jacobian.msg"
-  DEPENDENCIES std_msgs
+  DEPENDENCIES std_msgs builtin_interfaces
 )
 
 if(BUILD_TESTING)

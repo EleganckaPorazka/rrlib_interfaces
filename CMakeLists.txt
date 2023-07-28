@@ -7,11 +7,15 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(std_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "action/PTP.action"
   "action/LIN.action"
+  "msg/JacobianStamped.msg"
+  "msg/Jacobian.msg"
+  DEPENDENCIES std_msgs
 )
 
 if(BUILD_TESTING)
